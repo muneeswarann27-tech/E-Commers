@@ -1,29 +1,21 @@
 {
-	"name": "e-commerce-store",
-	"version": "1.0.0",
-	"description": "",
-	"main": "backend/server.js",
-	"scripts": {
-		"dev": "nodemon backend/server.js",
-		"start": "node backend/server.js",
-		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-	},
-	"keywords": [],
-	"author": "",
-	"type": "module",
-	"license": "ISC",
-	"dependencies": {
-		"bcryptjs": "^2.4.3",
-		"cloudinary": "^2.4.0",
-		"cookie-parser": "^1.4.6",
-		"dotenv": "^16.4.5",
-		"express": "^4.19.2",
-		"ioredis": "^5.4.1",
-		"jsonwebtoken": "^9.0.2",
-		"mongoose": "^8.5.3",
-		"stripe": "^16.8.0"
-	},
-	"devDependencies": {
-		"nodemon": "^3.1.4"
-	}
+  "name": "mern-ecommerce",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">E-Commerce Store 🛒</h1>",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend --include=dev && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burakorkmez/mern-ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burakorkmez/mern-ecommerce/issues"
+  },
+  "homepage": "https://github.com/burakorkmez/mern-ecommerce#readme"
 }

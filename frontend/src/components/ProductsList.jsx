@@ -5,8 +5,6 @@ import { useProductStore } from "../stores/useProductStore";
 const ProductsList = () => {
 	const { deleteProduct, toggleFeaturedProduct, products } = useProductStore();
 
-	console.log("products", products);
-
 	return (
 		<motion.div
 			className='bg-gray-800 shadow-lg rounded-lg overflow-hidden max-w-4xl mx-auto'
@@ -69,7 +67,7 @@ const ProductsList = () => {
 								</div>
 							</td>
 							<td className='px-6 py-4 whitespace-nowrap'>
-								<div className='text-sm text-gray-300'>${product.price.toFixed(2)}</div>
+								<div className='text-sm text-gray-300'>₹{product.price.toFixed(2)}</div>
 							</td>
 							<td className='px-6 py-4 whitespace-nowrap'>
 								<div className='text-sm text-gray-300'>{product.category}</div>
